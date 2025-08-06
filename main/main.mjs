@@ -63,3 +63,25 @@ ipcMain.handle("save-sheet", async (event, sheet) => {
     return { success: false, error: err.message };
   }
 });
+
+ipcMain.handle('listar-fichas', async () => {
+  const { canceled, filePaths } = await dialog.showOpenDialog({
+    title: 'Escolher pasta com fichas',
+    properties: ['openDirectory']
+  });
+
+  if (canceled || filePaths.length === 0) return { success: false };
+
+  const dir = filePaths[0];
+  const arquivos = fs.readdirSync(dir).filter(file => file.endsWith('.json'));
+
+  const fichas = arquivos.map((file) => {
+    const content = fs.readFileSync(path.join(dir, file), 'utf-8');
+    return {
+      filename: file,
+      data: JSON.parse(content)
+    };
+  });
+
+  return { success: true, fichas };
+});

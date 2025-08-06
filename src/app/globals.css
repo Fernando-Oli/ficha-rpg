@@ -49,3 +49,11 @@ img {
     -ms-user-select: none;
   }
 }
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 20%;
+}
