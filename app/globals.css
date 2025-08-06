@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@config '../../tailwind.config.ts';
+
+/* Base layer */
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4 {
+    user-select: none;
+  }
+
+  ::selection {
+    background-color: rgba(137, 125, 123, 0.4);
+  }
+}
+
+/* Para impedir algumas seleções de texto e elementos*/
+body {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+img {
+  /* Para navegadores baseados em WebKit */
+  -webkit-user-drag: none;
+}
+
+/* Utilities layer */
+@layer utilities {
+  :root {
+    --background: #372318;
+    --foreground: #eecc98;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+}

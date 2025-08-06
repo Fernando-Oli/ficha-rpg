@@ -1,0 +1,19 @@
+{
+  "appId": "com.fernando.ficha",
+  "productName": "Gerador de Ficha de RPG",
+  "directories": {
+    "output": "dist"
+  },
+  "files": [
+    "main/**/*",
+    "out/**/*",
+    "package.json",
+    "node_modules/**/*",
+    "main/preload.js"
+  ],
+  "win": {
+    "target": "nsis",
+    "icon": "/public/icon.ico"
+  }
+}
+
