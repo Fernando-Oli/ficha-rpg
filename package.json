@@ -2,14 +2,11 @@
   "name": "ficha-rpg",
   "version": "1.0.0",
   "private": true,
-  "main": "main/main.mjs",
-  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "build-electron": "electron-builder --config electron-builder.json"
+    "lint": "next lint"
   },
   "dependencies": {
     "concurrently": "^9.1.2",
