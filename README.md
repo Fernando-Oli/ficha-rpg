@@ -34,6 +34,10 @@ O Electron abrirá automaticamente a interface gerada pelo Next.js.
 npm run build
 ```
 
+```bash
+npm run build-electron
+```
+
 O app será empacotado para distribuição como executável.
 
 ## 🧩 Possibilidades de extensão
