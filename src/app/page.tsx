@@ -18,18 +18,6 @@ declare global {
     };
   }
 }
-// const fichas = arquivos.map((file) => {
-//     const content = fs.readFileSync(path.join(dir, file), 'utf-8');
-//     return {
-//       filename: file,
-//       data: JSON.parse(content)
-//     };
-// O retorno esperado de listarFichas é um array de objetos com a estrutura:
-// {
-//   filename: string;
-//   data: Character;
-// }
-//   });
 
 // funções para gerar dados aleatórios
 const classes = ["Guerreiro", "Mago", "Ladino", "Clérigo", "Arqueiro"];
