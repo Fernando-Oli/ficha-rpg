@@ -14,6 +14,10 @@
   "win": {
     "target": "nsis",
     "icon": "/public/icon.ico"
+  },
+  "linux": {
+    "target": ["AppImage", "deb", "snap"],
+    "icon": "/public/icon.png"
   }
 }
 

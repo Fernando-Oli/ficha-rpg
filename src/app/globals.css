@@ -41,7 +41,7 @@ img {
 /* Utilities layer */
 @layer utilities {
   :root {
-    --background: #372318;
+    --background: #46494C;
     --foreground: #eecc98;
     user-select: none;
     -webkit-user-select: none;
@@ -55,5 +55,8 @@ button {
 }
 
 button:hover {
-  opacity: 20%;
+  scale: 1.1;
+  transition: all;
+  animation: ease-in-out;
+  transition-duration: 700ms;
 }
